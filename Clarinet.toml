@@ -1,0 +1,24 @@
+[project]
+name = 'Decentralized-Transportation-Autonomous-Vehicle-Management'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.fleet-coordination]
+path = 'contracts/fleet-coordination.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.manufacturer-verification]
+path = 'contracts/manufacturer-verification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
